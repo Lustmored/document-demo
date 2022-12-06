@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form method="post" enctype="multipart/form-data">
+        <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
+        <input type="file" name="data[file]" />
+        <input type="submit">
+    </form>
+    {% if file is not null %}
+        <section>
+            <h3>{{ file.path }} {{ file.mimeType }}</h3>
+        </section>
+    {% endif %}
+{% endblock %}

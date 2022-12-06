@@ -6,20 +6,15 @@ namespace App\Controller;
 
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Zenstruck\Document\PendingDocument;
 
-#[Route('/', name: 'index')]
-class Index extends AbstractController
+#[Route('/value_resolver', name: 'value_resolver')]
+class ValueResolved extends AbstractController
 {
-    public function __invoke(Request $request): Response
+    public function __invoke(?PendingDocument $file): Response
     {
-        $file = null;
-        if ($request->files->has('file')) {
-            $file = new PendingDocument($request->files->get('file'));
-        }
         return $this->render('simple_form.html.twig', [
             'file' => $file
         ]);
