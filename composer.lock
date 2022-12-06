@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "77ccfcfd214c355b53ea7a396c663bbf",
+    "content-hash": "8f009b1e3c6a8bc8312b8ce4e0fe130c",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -7537,6 +7537,73 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "zenstruck/document-library",
+            "version": "dev-demo",
+            "source": {
+                "type": "git",
+                "url": "../document-library",
+                "reference": "9a5c7594b630c8b671ee26a950362f1ebaea832b"
+            },
+            "require": {
+                "league/flysystem": "^3.10.1",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "^2.7",
+                "doctrine/orm": "^2.13",
+                "league/flysystem-memory": "^3.3",
+                "phpstan/phpstan": "^1.4",
+                "phpunit/phpunit": "^9.5.0",
+                "symfony/cache": "^5.4|^6.0",
+                "symfony/form": "^5.4|^6.0",
+                "symfony/framework-bundle": "^5.4|^6.0",
+                "symfony/http-foundation": "^5.4|^6.0",
+                "symfony/mime": "^5.4|^6.0",
+                "symfony/phpunit-bridge": "^6.1",
+                "symfony/serializer": "^5.4|^6.0",
+                "symfony/validator": "^5.4|^6.0",
+                "symfony/var-dumper": "^5.4|^6.0",
+                "zenstruck/foundry": "^1.23"
+            },
+            "suggest": {
+                "doctrine/dbal": "To use the Document type",
+                "symfony/framework-bundle": "To use the provided Symfony bundle"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zenstruck\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Zenstruck\\Document\\Library\\Tests\\": [
+                        "tests/"
+                    ]
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Bond",
+                    "email": "kevinbond@gmail.com"
+                }
+            ],
+            "description": "Document (file) object abstraction using Flysystem.",
+            "homepage": "https://github.com/zenstruck/document-library",
+            "keywords": [
+                "filesystem",
+                "flysystem",
+                "media"
+            ],
+            "time": "2022-11-11T21:21:57+00:00"
         }
     ],
     "packages-dev": [
@@ -9810,7 +9877,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "zenstruck/document-library": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

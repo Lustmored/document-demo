@@ -1,0 +1,4 @@
+zenstruck_document_library:
+  libraries:
+    default: 'default.storage'
+    temp: 'temp.storage'

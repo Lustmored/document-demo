@@ -12,4 +12,5 @@ return [
     Symfony\Bundle\MonologBundle\MonologBundle::class => ['all' => true],
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
     League\FlysystemBundle\FlysystemBundle::class => ['all' => true],
+    Zenstruck\Document\Library\Bridge\Symfony\ZenstruckDocumentLibraryBundle::class => ['all' => true],
 ];

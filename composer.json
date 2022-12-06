@@ -41,7 +41,8 @@
         "symfony/web-link": "6.2.*",
         "symfony/yaml": "6.2.*",
         "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0"
+        "twig/twig": "^2.12|^3.0",
+        "zenstruck/document-library": "dev-demo"
     },
     "config": {
         "allow-plugins": {
@@ -69,6 +70,12 @@
         "symfony/polyfill-php80": "*",
         "symfony/polyfill-php81": "*"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "../document-library"
+        }
+    ],
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
