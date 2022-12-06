@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form method="post" enctype="multipart/form-data">
+        <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
+        <input type="file" name="data[file][]" multiple />
+        <input type="submit">
+    </form>
+    {% for file in files %}
+        <section>
+            <h3>{{ file.path }} {{ file.mimeType }}</h3>
+        </section>
+    {% endfor %}
+{% endblock %}
