@@ -7544,7 +7544,7 @@
             "source": {
                 "type": "git",
                 "url": "../document-library",
-                "reference": "b05b7a3b6a4a55a7634daa3190bf388385ab1541"
+                "reference": "07fbf784d0f1dcbf2ab67b445b93324dc58dc2e4"
             },
             "require": {
                 "league/flysystem": "^3.10.1",
@@ -7603,7 +7603,7 @@
                 "flysystem",
                 "media"
             ],
-            "time": "2022-12-07T09:46:27+00:00"
+            "time": "2022-12-07T09:57:40+00:00"
         }
     ],
     "packages-dev": [

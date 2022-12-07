@@ -12,7 +12,7 @@ use Zenstruck\Document\Attribute\UploadedFile;
 class MultipleFilesResolved extends AbstractController
 {
     public function __invoke(
-        #[UploadedFile('data[file]')]
+        #[UploadedFile('data[file][]')]
         array $files = []
     ): Response {
         return $this->render('multiple_files.html.twig', [
