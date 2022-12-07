@@ -6,8 +6,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Zenstruck\Document\Library\Bridge\Symfony\ValueResolver\UploadedFile;
-use Zenstruck\Document\PendingDocument;
+use Zenstruck\Document\Attribute\UploadedFile;
 
 #[Route('/multiple_files', name: 'multiple_files')]
 class MultipleFilesResolved extends AbstractController

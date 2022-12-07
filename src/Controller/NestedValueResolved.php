@@ -6,7 +6,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Zenstruck\Document\Library\Bridge\Symfony\ValueResolver\UploadedFile;
+use Zenstruck\Document\Attribute\UploadedFile;
 use Zenstruck\Document\PendingDocument;
 
 #[Route('/nested_value_resolver', name: 'nested_value_resolver')]
